@@ -1,0 +1,32 @@
+#dmid h3 {
+	text-align:center;
+	color:#d3181f;
+   
+}
+#tmid{
+	width:90%; border:0;
+	margin-left:auto;
+	margin-right:auto;
+	border-collapse:separate;
+	border-spacing:5;
+}
+table.tmid{
+	padding:10%;
+}
+h3{
+	padding:5;
+}
+#midimg{
+	height:150;
+	width:300;
+}
+#quote{
+	height:50;
+	width:50;
+}
+.td2{
+	width:75%;
+}
+.td1{
+	width:5%;
+}
