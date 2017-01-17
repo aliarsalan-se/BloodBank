@@ -1,30 +1,18 @@
-
-
-
-
-
-
-
-
-
-
-
-
 .login{
-	position: absolute;
-	top: 9px;
-	left: 242px;
-	height: 50%;
-	width : 700px;
-	padding-top: 100px;
+	position:absolute;
+	top: 8px;
+	left: 350px;
+	height: 60%;
+	width : 500px;
+	padding-top: 70px;
 	background-image: url(Images/login.jpeg);
 	background-size: cover;
-	border-bottom-color:#FF0303;
-	border-top:double;
-	border-left:double;
-	border-right:double;
-	border-bottom:double;
-	border-radius:10px;
+	border-bottom-color: #FF0303;
+	border-top: double;
+	border-left: double;
+	border-right: double;
+	border-bottom: double;
+	border-radius: 10px;
 	
 	
 }
@@ -56,7 +44,7 @@
 	font-weight: 400
 }
 
-.login input[type=button]{
+.login input[type=submit]{
 	width: 250px;
 	height: 35px;
 	background: #fff;
@@ -71,11 +59,11 @@
 	margin-top: 10px;
 }
 
-.login input[type=button]:hover{
+.login input[type=submit]:hover{
 	opacity: 0.8;
 }
 
-.login input[type=button]:active{
+.login input[type=submit]:active{
 	opacity: 0.6;
 }
 
@@ -89,7 +77,7 @@
 	border: 5px solid rgba(255,255,255,0.9);
 }
 
-.login input[type=button]:focus{
+.login input[type=submit]:focus{
 	outline: none;
 }
 

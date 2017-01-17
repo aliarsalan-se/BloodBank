@@ -1,9 +1,17 @@
 <html>
 <head>
-<link href="project.css" type="text/css" rel="stylesheet">
-<link href="project.js" type="text/javascript">
+  
+  <link href="login.css" type="text/css" rel="stylesheet">
+  <link href="project.css" type="text/css" rel="stylesheet">
+   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head >
 <body>
+
 <div class="main">
 <header Style="background-color:white">
     <div>
@@ -12,9 +20,9 @@
             <tr>
                 <td id="hbtn1"  >&nbsp;&nbsp;&nbsp;&nbsp;<a id="logo" href="index.php"><img id="logo" src="Images/logo.png" /></a></td>
                 <td id="hbtn"><a href="index.php"><button class="button">Home</button></a></td>
-                <td id="hbtn"><a href="index.php"><button class="button">DonorList</button></a></td>
-                <td id="hbtn"><a href="index.php"><button class="button">AboutUs</button></a></td>      
-                <td id="hbtn"><a href="contactus.php"><button class="button"style="background-color:#880002">ContactUs</button></a></td>
+                <td id="hbtn"><a href="donorlist.php"><button class="button">DonorList</button></a></td>
+                <td id="hbtn"><a href="aboutus.php"><button class="button" style="background-color:#880002">AboutUs</button></a></td>      
+                <td id="hbtn"><a href="contactus.php"><button class="button">ContactUs</button></a></td>
                 <td id="hbtn"><a href="register.php"><button class="button">Register</button></a></td>
                 <td id="hbtn"><a href="login.php"><button class="button">LogIn</button></a></td>
             </tr>
@@ -25,31 +33,55 @@
 <hr id="hr">
 <header style="background:#F7F5F5">
 <center>
-<div id="text" ><h3>Contact Form</h3>
-<p><bg>
-<table id="tmid" border="1" style="border-color:#FA0107">
-    <tbody>
-        <tr>
-            <td style="padding-left:5%; margin-top:0; padding-top:0;" id="text" >
-				<form name="contactform" style="font-size:18px" method="post" action="contactus.php">
-				   
-				    <span> Your Name </span><br>
-					<input type="text" size="50" name="name"><br><br>
-					<span> Your Email Address/Mobile Number </span><br><br>
-					<input type="email" size="50" name="email"><br><br>
-					<span> Subject </span><br>
-					<input type="text" size="50" name="subject"><br><br>
-					<span> Message </span><br>
-					<textarea cols="100" rows="6" name="message"></textarea><br>
-					<input type="submit" name="submit" class="button" style="width:100px; height:45px" >
-					
-				</form>
-	  </td>
-      <td id="sbtd"><br><br><img id="sbimg" src="images/sb1.jpg" alt=""/><br><br><br>
-        <img id="sbimg" src="images/sb2.png" alt=""/></td>
+<div id="text" ><h3>About Us</h3>
+
+<bg>
+    <table border="0" bordercolor="#880406" style="border-bottom-width:thick; padding-left:30; padding-right: 30; " width="70%" >
+    <tr><td id="text" colspan="3"><center>
+    <h3 style="font-size:36px">Our Mission :</h3>
+    <p style="font-size:18px"> To ensure that the person in need for blood does not have to go through the panic they face <br>
+    while looking and searching out for blood.<br>
+    As the donor will personally meet and donate blood to the needy person, the donow will have satisfaction as he/she is sure <br>
+    that blood is being donated not being sold by any other blood donating society.</p></center>
+    <tr><td></td></tr><br><br></td></tr>
+    <tr>
+    <td width="20%">
+    <img  src="Images/ali.jpg" height="150" width="150"><br>
+    <pre><b>
+      Ali Arsalan
+      FA14-BSE-123
+      Bannu Pakistan.</b>
+    </pre>
+    </td>
+    <td width="20%">
+    <img   src="Images/abdullah.jpg" height="150" width="150"><br>
+    <pre><b>
+      Muhammad Abdullah Javed
+      FA14-BSE-115
+      Sheikhupura,Punjab Pakistan.</b>
+    </pre>
+    </td>
+   <td width="20%">
+   <img  src="Images/hamza.jpg" height="150" width="150"><br>
+    <pre><b>
+      Hamza Manzoor
+      FA14-BSE-080
+      Islamabad Pakistan.
+      </b>
+    </pre>
+    </td>
     </tr>
-  </tbody>
-</table>
+    </table>
+	
+		
+      
+      </bg>
+        
+	</p>
+<br><br><br><br><br><br><br>
+</header>
+
+</div></div>
 <footer style="background-color:black; height: 230;">
   <div class="centered clearfix">
     <table width="100%">
@@ -116,26 +148,6 @@
 });
 </script>
 </footer>
-</div>
-<!-- PHP starts here to save file -->
-<?php
-if(isset($_POST['submit'])){
-	
-$name=$_POST['name'];
-$email=$_POST['email'];
-$sub=$_POST['subject'];
-$msg=$_POST['message'];
-$file="messages/$sub.txt";
-$mf=fopen($file,'w');
-$txt="$name \n" ;
-fwrite($mf,$txt);
-$txt="$email \n";
-fwrite($mf,$txt);
-$txt="$msg \n";
-fwrite($mf,$txt);
-fclose($mf);
 
-}
-?>
 </body>
-</head>
+</html>

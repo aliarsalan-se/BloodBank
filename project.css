@@ -74,9 +74,9 @@ td.hbtn {
 	
 	}
 	bg{
+		position:inherit;
 	align:center;
-	position:fixed;
-	top: 170px;
+	top:auto;
 	left:7.6%;
 	height: 100%;
 	width : 84.8%;
@@ -85,3 +85,27 @@ td.hbtn {
 	
 	
 }
+loginBg{
+	
+	align:center;
+	position:fixed;
+	top: 170px;
+	left:7.6%;
+	height: 100%;
+	width : 84.8%;
+	background-color:#F8F5F5;
+	}
+
+h3 {
+    font-weight:1000;
+    font-style:italic;
+	color:#BE0205;
+  }
+  #ft{
+     color:#FFFFFF;
+	 font-size:12px;
+	 font-weight:700;
+ }
+ footer{
+ 	background-color: black;
+ }	

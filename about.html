@@ -1,9 +1,17 @@
 <html>
 <head>
-<link href="project.css" type="text/css" rel="stylesheet">
-<link href="project.js" type="text/javascript">
+  
+  <link href="login.css" type="text/css" rel="stylesheet">
+  <link href="project.css" type="text/css" rel="stylesheet">
+   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head >
 <body>
+
 <div class="main">
 <header Style="background-color:white">
     <div>
@@ -14,9 +22,9 @@
                 <td id="hbtn"><a href="index.php"><button class="button">Home</button></a></td>
                 <td id="hbtn"><a href="index.php"><button class="button">DonorList</button></a></td>
                 <td id="hbtn"><a href="index.php"><button class="button">AboutUs</button></a></td>      
-                <td id="hbtn"><a href="contactus.php"><button class="button"style="background-color:#880002">ContactUs</button></a></td>
+                <td id="hbtn"><a href="contactus.php"><button class="button">ContactUs</button></a></td>
                 <td id="hbtn"><a href="register.php"><button class="button">Register</button></a></td>
-                <td id="hbtn"><a href="login.php"><button class="button">LogIn</button></a></td>
+                <td id="hbtn"><a href="login.php"><button class="button"style="background-color:#880002">LogIn</button></a></td>
             </tr>
         </tbody>
     </table>
@@ -25,32 +33,19 @@
 <hr id="hr">
 <header style="background:#F7F5F5">
 <center>
-<div id="text" ><h3>Contact Form</h3>
-<p><bg>
-<table id="tmid" border="1" style="border-color:#FA0107">
-    <tbody>
-        <tr>
-            <td style="padding-left:5%; margin-top:0; padding-top:0;" id="text" >
-				<form name="contactform" style="font-size:18px" method="post" action="contactus.php">
-				   
-				    <span> Your Name </span><br>
-					<input type="text" size="50" name="name"><br><br>
-					<span> Your Email Address/Mobile Number </span><br><br>
-					<input type="email" size="50" name="email"><br><br>
-					<span> Subject </span><br>
-					<input type="text" size="50" name="subject"><br><br>
-					<span> Message </span><br>
-					<textarea cols="100" rows="6" name="message"></textarea><br>
-					<input type="submit" name="submit" class="button" style="width:100px; height:45px" >
-					
-				</form>
-	  </td>
-      <td id="sbtd"><br><br><img id="sbimg" src="images/sb1.jpg" alt=""/><br><br><br>
-        <img id="sbimg" src="images/sb2.png" alt=""/></td>
-    </tr>
-  </tbody>
-</table>
-<footer style="background-color:black; height: 230;">
+<div id="text" ><h3>About Us</h3>
+<center>
+<loginbg>
+    
+	
+		
+      
+      </loginbg>
+      </center>  
+	</p>
+
+</header>
+<footer style="background-color:black; height: 250;">
   <div class="centered clearfix">
     <table width="100%">
       <tr>
@@ -116,26 +111,9 @@
 });
 </script>
 </footer>
-</div>
-<!-- PHP starts here to save file -->
-<?php
-if(isset($_POST['submit'])){
-	
-$name=$_POST['name'];
-$email=$_POST['email'];
-$sub=$_POST['subject'];
-$msg=$_POST['message'];
-$file="messages/$sub.txt";
-$mf=fopen($file,'w');
-$txt="$name \n" ;
-fwrite($mf,$txt);
-$txt="$email \n";
-fwrite($mf,$txt);
-$txt="$msg \n";
-fwrite($mf,$txt);
-fclose($mf);
 
-}
-?>
+</div></div>
+<!-- PHP started -->
+
 </body>
-</head>
+</html>

@@ -1,108 +1,40 @@
 <html>
 <head>
-<link href="project.css" type="text/css" rel="stylesheet">
-   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="login.css" type="text/css" rel="stylesheet">
+  <link href="project.css" type="text/css" rel="stylesheet">
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-   <script src="register.js" type="text/jscript"></script>
-</head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head >
 <body>
-<div class="container">
-<div class="main">
-<header Style="background-color:white">
-    <div>
-    <table class="header" cellspacing="0"; cellpadding="0">
-        <tbody>
+  <div class="main">
+    <header Style="background-color:white">
+      <div>
+        <table class="header" cellspacing="0"; cellpadding="0">
+          <tbody>
             <tr>
-                <td id="hbtn1"  >&nbsp;&nbsp;&nbsp;&nbsp;<a id="logo" href="index.php"><img id="logo" src="Images/logo.png" /></a></td>
-                <td id="hbtn"><a href="index.php"><button class="button">Home</button></a></td>
-                <td id="hbtn"><a href="index.php"><button class="button">DonorList</button></a></td>
-                <td id="hbtn"><a href="index.php"><button class="button">AboutUs</button></a></td>      
-                <td id="hbtn"><a href="contactus.php"><button class="button">ContactUs</button></a></td>
-                <td id="hbtn"><a href="register.php"><button class="button" style="background-color:#880002">Register</button></a></td>
-                <td id="hbtn"><a href="login.php"><button class="button">LogIn</button></a></td>
+              <td id="hbtn1"  >&nbsp;&nbsp;&nbsp;&nbsp;<a id="logo" href="index.php"><img id="logo" src="Images/logo.png" /></a></td>
+              <td id="hbtn"><a href="index.php"><button class="button">Home</button></a></td>
+              <td id="hbtn"><a href="donorlist.php"><button class="button" style="background-color:#880002">DonorList</button></a></td>
+              <td id="hbtn"><a href="index.php"><button class="button">AboutUs</button></a></td>      
+              <td id="hbtn"><a href="contactus.php"><button class="button">ContactUs</button></a></td>
+              <td id="hbtn"><a href="register.php"><button class="button">Register</button></a></td>
+              <td id="hbtn"><a href="login.php"><button class="button">LogIn</button></a></td>
             </tr>
-        </tbody>
-    </table>
-	</div>
-</header>
-<hr id="hr">
-<header style="background:#F7F5F5">
-<center>
-<div id="text" ><h3>Get Registered And Save a Life</h3>
-<center><bg>
-<p><table>
-<tr>
-<td><!-- Registration Form-->
-<form  name="reg_form" method="post" id="text" style="font-size:18px;" action="congratulation.php">
-  <p>
-    <label for="name">Name :</label>
-    <input name="name" type="text" id="name" size="30" required><sup>&nbsp;* 
-  </p><p id="name1"> </p>
-  <p>Gender:&nbsp;<sup>&nbsp;*  
-  
-    <label>
-      <input type="radio" name="gender" value="Male" id="gender_0" required>
-      Male</sup></label>
-    <br>
-    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;
-      <input type="radio" name="gender" value="Female" id="gender_1" required>
-      Female</label>
-    <br><br>
-  <label for="email">Email address (optional):</label>
-    <input type="text" name="email" id="user_name">
-  </p>
-  <p><br>
-    <label for="mob">Mobile Number :</label>
-    <input name="mob" type="text" id="mob" size="30" required>&nbsp;<sup>*
-  </p>
-  <p><br>
-  <label for="password">Password :</label>
-    <input name="password" type="password" id="password" size="30" required>&nbsp;<sup>*
-  </p>
-  <p>Blood Group :
-    <select name="btype" id="btype">
-      <option value="null">Select</option>
-      <option value="A">A</option>
-      <option value="B">B</option>
-      <option value="AB">AB</option>
-      <option value="O">O</option>
-    </select> &nbsp;&nbsp;
-    Rh:
-    <select name="rhtype" id="rhtype">
-      <option value="null">Select</option>
-      <option value="+">+</option>
-      <option value="-">-</option>
-    </select>&nbsp; <sup>*
-  </p>
-  <p>Donate or on Payment :</p>
-  <p>
-    <label>
-      <input type="radio" name="payment" value="Free" id="payment_0">
-      Free</label>
-    <br>
-    <label>
-      <input type="radio" name="payment" value="OnPayment" id="payment_1">
-      On Payment</label>
-    <br>
-    <label for="payment">Price(if on payment):</label>
-    <input name="price" type="text" id="payment" size="15">
-  </p>
-  <p>
-    <label for="disease">Blood Disease (if any):</label>
-  </p>
-  <p>
-    <textarea name="disease" id="disease" cols="25" rows="3"></textarea>
-    <br>
-    <br>
-    <label for="date">Last time blood donated (Date):</label>
-    <input type="date" name="date" id="date">
-  </p>
-  <p>
-    <label for="city">Current Location :</label>
-    <select name="city" style="height: 25px; ">
-              <option>-select city-</option>
+          </tbody>
+       </table>
+	    </div>
+    </header>
+    <hr id="hr">
+    <header >
+      <center>
+      <bg  >
+        <div id="text" style="background:#F7F5F5; bottom: 0; "><h3>Search Donor</h3>
+          <form name="searchdonor" action="donorlist.php" method="post">
+            <label>City</label>
+            <select name="city" style="height: 30px; ">
+              <option>&nbsp;&nbsp;&nbsp;-select city-</option>
               <option value="Ahmedabad">Ahmedabad</option>
               <option value="Alipurchatha">Alipurchatha</option>
               <option value="Allahabad">Allahabad</option>
@@ -252,26 +184,47 @@
               <option value="Wazirabad">Wazirabad</option>
               <option value="Zhob">Zhob</option>
               <option value="Ziarat">Ziarat</option>
-            </select>&nbsp; <sup>*
-  </p>
-  <p>
-    <input type="checkbox" name="terms" id="terms" required>
-  I have read the terms and condition<br>&nbsp;&nbsp;&nbsp;&nbsp; mentioned just on left side of the screen.</p>
-  <p>
-    <input name="submit" type="submit" class="button" value="Submit" style="width:100px">
-    <input type="reset" name="reset" id="reset" value="Reset" class="button" style="width:100px;">
-  </p><p style="font-size:16px">* these fields are mendatory to be filled </p>
-</form>
-</td>
-<td style="align-content:stretch; padding-left:8%; padding-right:5%" id="text" align="center" valign="top"><h1 style="font-size:30px"><center> Terms And Conditions</center> </h1>
-<p style="font-size:18px">
-The website is solely made for public good it does not gaurantee how will people use it.<br>whenever someone you contacts you make sure to meet them at safe place for blood donation.<br> we do not gaurantee that the needy person will be genuinely in need.<br>
-</td>
-</tr></table>  
-</bg></center>
-	</p>
-</center>
-<footer style="background-color:black; height: 230;">
+            </select>
+            <label>Blood Group</label>
+            <select name="btype" id="btype" style="height: 30px;">
+              <option value="null">Select</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="AB">AB</option>
+              <option value="O">O</option>
+            </select> 
+            <label>RH</label>
+            <select name="rhtype" id="rhtype" style="height: 30px;">
+              <option value="null">Select</option>
+              <option value="+">+</option>
+              <option value="-">-</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="searchd" value="Search" class="button" >
+          </form>
+          <br>
+          <?php 
+          include('config.php');
+          if(isset($_POST['searchd'])){
+            print '<table border="1" style="cellspacing="0";';
+            print '<tr><th>Name</th><th>Email</th><th>Gender</th><th>Mobile</th><th>Current City</th><th>Blood Group</th><th>Price</th><th>Disease</th><th>
+            Last Time Blood donated on</th></tr>';
+            $sql='select * from donors where city="'.$_POST['city'].'" AND blood="'.$_POST['btype'].$_POST['rhtype'].'"';
+            $result=mysqli_query($conn,$sql);
+            if(mysqli_num_rows($result)>0){
+              while($row= mysqli_fetch_assoc($result)){
+                print "<tr><td>".$row["name"]."</td><td>".$row["email"]."</td><td>".$row["gender"]."</td><td>".$row["mob"]."</td><td>".$row["city"]."</td><td>".$row["blood"]."</td><td>".$row["price"]."</td><td>".$row["disease"]."</td><td>".$row["date"]."</td></tr></table>";
+              }
+            }
+            else{
+              print '<tr><td><center><b>NO RECORD FOUND!!!</b></center><td></tr></table>';
+            }
+          }
+          ?>
+          <br><br><br><br><br><br><br><br><br>
+        </div>
+        </bg>
+      </center>
+      <footer style="background-color:black; height: 230;">
   <div class="centered clearfix">
     <table width="100%">
       <tr>
@@ -334,32 +287,10 @@ The website is solely made for public good it does not gaurantee how will people
   $('.footer-links-holder h3').click(function () {
     $(this).parent().toggleClass('active');
   });
-});
-</script>
-</footer>
-</header>
-<script type="text/javascript">
-  function validate(){
-if(document.forms["reg_form"]["btype"].value=="Select"){
-alert("please select blood type");
-return false;
-}
-if(document.forms["reg_form"]["rhtype"].value=="Select"){
-alert("please select Rh type");
-return false;
-}
-if(document.forms["reg_form"]["city"].value=="-select city-"){
-document.alert("please select  City");
-document.forms["reg_form"]["city"].value.focus();
-return false;
-}
-if(document.forms["reg_form"]["payment"].value=="OnPayment"){
-  if(document.forms["reg_form"]["price"].value=="")
-alert("please Enter price for your blood bottle");
-return false;
-}
-
-}
-</script>
+  });
+  </script>
+   </footer>
+    </header>
+</div>
 </body>
 </html>
